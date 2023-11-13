@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*全域設定*/
+*,*:before,*:after{
+    box-sizing:border-box}
+
+body{
+	font-family: "微軟正黑體",sans-serif;
+}
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+    }
+a{
+	text-decoration:none;
+}
+
+/*follow*/
+.follow{
+    background: #F6F6F8;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.follow li{
+	padding: 5px;
+}
+.follow li img{
+	padding-right:5px;
+}
+.fb{
+    border-right: 1px solid #CCCCCC;
+	padding-right:12px;	
+	color:#4267B2;
+}
+.twitter{
+	padding-right:395px;
+	color:#1DA1F2;
+}
+.follow li a:hover{
+	color:#BDC0BA;
+}
+
+
+.header-center{
+	display: flex;
+    justify-content:space-around;
+}
+
+.item{
+	display: flex;
+
+}
+.item li{
+	padding:26px 42px 0 42px;
+}
+.item li a{
+	color:#00251A;
+	font-weight:700;
+	display: block;	
+	padding-bottom:26px;
+	border-bottom: 4px solid white;
+}
+.item li a:hover{
+	border-bottom: 4px solid #00CC99;
+}
+.center-img{
+	padding-top:18px;
+}
+
+/*header img*/
+.pic{
+	position: relative;
+}
+.pic-img{
+	position: relative;
+	position:absolute;
+	top: 225px;
+	
+}
+.pic-img h1{
+	color: #000;
+	font-size: 36px;
+	font-weight: 700;
+	position:absolute;
+	bottom: 26px;
+	top: 27px;
+	left: 498px;
+	line-height: 43.2px;
+}
+
+
+/*介紹資訊*/
+
+.main {
+	display: flex;
+	justify-content: center;
+	
+}
+.main li{
+	width: 350px;
+	text-align: center;
+	margin:60px 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px 0 gray;
+	
+}
+.main img{
+	padding-top:20px;
+}
+.main li h2{
+	font-weight: 700;
+	font-size: 20px;
+}
+.main li p{
+	padding: 20px;
+	line-height: 24px;
+}
+.jq img{
+	padding:50px 0;
+}
+.jq p{
+	text-align: left;
+}
+
+
+/*表格*/
+.content-list h3{
+	font-size: 24px;
+	font-weight:700;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.price{
+	margin: 0 auto;	
+}
+.price tr{
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	text-align: left;
+	
+}
+.price th{
+	padding: 6px 140px 6px 15px;
+	font-weight: 700;
+}
+.price td{
+	padding: 6px 140px 6px 15px;
+}
+.color-change{
+	color:#00CC99;
+}
+
+
+/*填資料*/
+.sheet{
+	background-image: url(image/Rectangle-8-1_01.png);
+	background-repeat: repeat-x;
+	padding-bottom: 35px;
+	margin-top: 60px;
+
+}
+.sheet h3{
+	color:#00251A;
+	font-size:24px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 35px;
+	line-height: 28.8px;
+}
+
+.sheet label {
+	cursor: pointer;
+}
+
+.sheetall{
+	display: flex;
+}
+
+.sheet-list{
+	margin:28px 30px 0 600px;
+}
+
+.information input{
+	width: 350px;
+	padding: 7px;
+	margin-bottom: 15px;
+	margin-top:8px;	
+}
+.remark{
+	padding-top:28px;
+	
+}
+
+.remark textarea{
+	width:350px;
+	padding-bottom: 20px;
+	margin-top: 8px;
+}
+
+.btn{
+	width:160px;
+	background: #00251A;
+	border: 1px solid #00251A;
+	color: #F6F6F8;
+	display: block;
+	margin-left:881px;
+	margin-top: 10px;
+	padding:10px 60px;
+	
+}
+.btn:hover{
+	opacity: 0.5;
+}
+
+/*表尾*/
+.footer{
+	padding: 20px;
+	background: white;
+	display: flex;
+    justify-content:space-around;
+	line-height: 24px;
+	
+}
+
+.footer span{
+	color:#00CC99;
+}
+.footer span:hover{
+	color:#00251A;
+	cursor: pointer;
+}
