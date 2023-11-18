@@ -95,6 +95,16 @@ a{
     justify-content:space-around;
 }
 
+.center-img h1 a{
+	display: block;
+	background-image: url(image/hexschool-logo.png);
+	width: 151px;
+	height: 36px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
 .item{
 	display: flex;
 
@@ -111,64 +121,70 @@ a{
 }
 .item li a:hover{
 	border-bottom: 4px solid #00CC99;
+    transition: all 0.8s;
 }
 .center-img{
 	padding-top:18px;
 }
 
 /*header img*/
-.pic{
-	position: relative;
-}
+
 .pic-img{
 	position: relative;
-	position:absolute;
-	top: 225px;
+	background-image: url(image/header_background.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 390px;
 	
 }
-.pic-img h1{
+.pic-img h2{
+	background-color:rgba(255, 255, 255, 0.1);
+	width: 100%;
+	height: 35%;
 	color: #000;
 	font-size: 36px;
 	font-weight: 700;
 	position:absolute;
-	bottom: 26px;
-	top: 27px;
-	left: 498px;
+	top: 120px;
+	padding-left:498px;
+	padding-top: 27px;
 	line-height: 43.2px;
-}
-
-
+}	
 /*介紹資訊*/
 
-.main {
+.main{
 	display: flex;
 	justify-content: center;
 	
 }
-.main li{
-	width: 350px;
-	text-align: center;
+.main>li{
+	width: 350px;	
 	margin:60px 15px;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px 0 gray;
+	padding: 20px;
 	
 }
 .main img{
-	padding-top:20px;
+	padding:0 0 20px 80px;
 }
-.main li h2{
+.main li h3{
 	font-weight: 700;
 	font-size: 20px;
+	padding-bottom: 20px;
+	text-align: center;
 }
-.main li p{
-	padding: 20px;
+.main>li>p{
 	line-height: 24px;
 }
 .jq img{
 	padding:50px 0;
 }
-.jq p{
-	text-align: left;
+
+.jq-list{
+	padding-left:30px ;
+	line-height: 24px;
+	list-style: disc;
 }
 
 
@@ -200,11 +216,16 @@ a{
 	color:#00CC99;
 }
 
+.price tr:hover{
+	background:#E4FFF8;
+    transition: all 1.5s;
+	cursor: pointer;
+}
+
 
 /*填資料*/
 .sheet{
-	background-image: url(image/Rectangle-8-1_01.png);
-	background-repeat: repeat-x;
+	background:linear-gradient(#E4FFF8,#A2DDCE);	
 	padding-bottom: 35px;
 	margin-top: 60px;
 
@@ -243,6 +264,7 @@ a{
 
 .remark textarea{
 	width:350px;
+	height: 180px;
 	padding-bottom: 20px;
 	margin-top: 8px;
 }
@@ -253,13 +275,21 @@ a{
 	border: 1px solid #00251A;
 	color: #F6F6F8;
 	display: block;
-	margin-left:881px;
-	margin-top: 10px;
 	padding:10px 60px;
 	
 }
+
+.btn-set{
+	display: flex;
+	justify-content:center;
+}
 .btn:hover{
-	opacity: 0.5;
+	background: #bfece1;
+	border: 1px solid #bfece1;
+	color: #00251A;
+	cursor: pointer;
+	transition: all 0.3s;
+
 }
 
 /*表尾*/
@@ -271,11 +301,20 @@ a{
 	line-height: 24px;
 	
 }
+.footer-img h1 a{
+	display: block;
+	background-image: url(image/hexschool-logo.png);
+	width: 151px;
+	height: 36px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
 
-.footer span{
+.footer li a{
 	color:#00CC99;
 }
-.footer span:hover{
+.footer li a:hover{
 	color:#00251A;
 	cursor: pointer;
 }
